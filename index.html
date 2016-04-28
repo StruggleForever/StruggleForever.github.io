@@ -242,6 +242,84 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Swift基础语法----(一)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/28/Swift基础语法----(一)/" class="article-date">
+      <time datetime="2016-04-27T16:03:08.000Z" itemprop="datePublished">2016-04-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/28/Swift基础语法----(一)/">Swift基础语法----(一)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h2><ul>
+<li>1.声明一个常量<br>  　　　<code>let MyName = &quot;颜镜圳&quot;</code><br>  　　　<code>print(MyName)</code></li>
+<li>2.声明一个变量<br>  　　　<code>var MyAge = 20</code></li>
+<li>3.当一行有多个语句时，应在两句代码之间加上分号<br>  　　　<code>var one = 1, two = 2; var three = 3</code></li>
+<li>4.小结:<br>　　1.在Swift语法中，一条语句的结尾可不加分号，但是为了增强代码的可读性，我们应该自觉添加分号，自觉换行<br>　　2.在Swift语法中，可以不填写数据类型，系统会自动识别，如果希望看到申明的常量或变两的类型。可以按住Option键，此时会发现鼠标变成了问号的样子，在此状态下点击变量名，我们就会发现对变量的描述，具体效果请大家亲测。<br>　　<br>数据转换</li>
+</ul>
+<hr>
+<pre><code>　　　let num1 = 10;
+　　　let num2 = 5.8;
+　　　// option键加左键点击num1会发现弹出框中显示num1为int型，num2为double型
+　　　// 在Swift中不同类型的两个值，不能相加，需强制转换其中一个的数据类型
+　　　// let sum = num1 + num2;// 这种方法是错误的
+　　　let intSum = num1 + Int(num2)
+　　　let doubleSum = Double(num1) + num2
+　　　print(intSum, doubleSum);
+　　　
+</code></pre><h2 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h2><pre><code>　　　if (num1 == 10) {
+　　　    print(&quot;true&quot;)
+　　　}else {
+　　　    print(&quot;false&quot;);
+　　　}
+</code></pre><ul>
+<li>这里要说的是，Swift中if后的圆括号内，只能放BOOL值，取值只有true和false两种</li>
+<li>与OC最大的不同就是，OC中非零及真的处理方法，例如：<code>if (num1){}</code>，判断num1是否有值，这种判断条件在Swift中不成立，程序会报错</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-关于评论区的Bug" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
