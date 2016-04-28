@@ -19,7 +19,7 @@
 2.声明一个变量  　　　var MyAge = 20
 3.当一行有多个语句时，应在两句代码之间加上分号  　　　var one = 1, two = 2; var three = 3
 4.小结:　　1.在Swift语法中，一条语句的结尾可不加分号，但是为了增强代码的">
-<meta property="og:updated_time" content="2016-04-28T02:00:49.000Z">
+<meta property="og:updated_time" content="2016-04-28T02:11:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Swift基础语法----(一)">
 <meta name="twitter:description" content="变量的声明
@@ -291,10 +291,24 @@
 <h2 id="数据转换"><a href="#数据转换" class="headerlink" title="数据转换"></a>数据转换</h2><pre><code>　　　let num1 = 10;
 　　　let num2 = 5.8;
 　　　// option键加左键点击num1会发现弹出框中显示num1为int型，num2为double型
+　　　// 在Swift中不同类型的两个值，不能相加，需强制转换其中一个的数据类型
+　　　// let sum = num1 + num2;// 这种方法是错误的
 　　　let intSum = num1 + Int(num2)
 　　　let doubleSum = Double(num1) + num2
 　　　print(intSum, doubleSum);
-</code></pre>
+　　　
+</code></pre><h2 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h2><pre><code>　　　if (num1 == 10) {
+　　　print(&quot;true&quot;)
+　　　}else {
+　　　print(&quot;false&quot;);
+　　　}
+</code></pre><ul>
+<li>这里要说的是，Swift中if后的圆括号内，只能放BOOL值，取值只有true和false两种</li>
+<li><p>与OC最大的不同就是，OC中非零及真的处理方法<br></p>
+<p>  　　　NSArray *example = @[@”1”,@”2”];<br>  　　　if(example) {<br>  　　　　　NSLog(@”true”);<br>  　　　}else {<br>  　　　    NSLog(@”false”);<br>  　　　}<br>  　　　// 这种判断条件在Swift中不成立，程序会报错</p>
+</li>
+</ul>
+
       
     </div>
     
@@ -305,7 +319,7 @@
         <p><span>本文标题:</span><a href="/2016/04/28/Swift基础语法----(一)/">Swift基础语法----(一)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Struggle</a></p>
         <p><span>发布时间:</span>2016-04-28, 00:03:08</p>
-        <p><span>最后更新:</span>2016-04-28, 10:00:49</p>
+        <p><span>最后更新:</span>2016-04-28, 10:11:15</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/04/28/Swift基础语法----(一)/" title="Swift基础语法----(一)">http://yoursite.com/2016/04/28/Swift基础语法----(一)/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/28/Swift基础语法----(一)/　　作者: Struggle" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -334,7 +348,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量的声明"><span class="toc-number">1.</span> <span class="toc-text">变量的声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据转换"><span class="toc-number">2.</span> <span class="toc-text">数据转换</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量的声明"><span class="toc-number">1.</span> <span class="toc-text">变量的声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据转换"><span class="toc-number">2.</span> <span class="toc-text">数据转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断语句"><span class="toc-number">3.</span> <span class="toc-text">判断语句</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
