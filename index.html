@@ -284,8 +284,32 @@
 　　　`let intSum = num1 + Int(num2)`
 　　　`let doubleSum = Double(num1) + num2`
 　　　`print(intSum, doubleSum);`
-</code></pre>
+</code></pre><!-- page.path 表示不含根路径的页面网址。还有数种方式可以匹配页面，在此不赘述。 -->
+<p>&lt;% if (page.path === “tags/index.html”){ %&gt;<br>    &lt;引入 tags 页面的代码&gt;<br>&lt;% } %&gt;</p>
+
       
+
+      
+        
+        <hr>
+<h2 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h2><ul>
+<li>1.声明一个常量<br>  　　　<code>let MyName = &quot;颜镜圳&quot;</code><br>  　　　<code>print(MyName)</code></li>
+<li>2.声明一个变量<br>  　　　<code>var MyAge = 20</code></li>
+<li>3.当一行有多个语句时，应在两句代码之间加上分号<br>  　　　<code>var one = 1, two = 2; var three = 3</code></li>
+<li>4.小结:<br>　　1.在Swift语法中，一条语句的结尾可不加分号，但是为了增强代码的可读性，我们应该自觉添加分号，自觉换行<br>　　2.在Swift语法中，可以不填写数据类型，系统会自动识别，如果希望看到申明的常量或变两的类型。可以按住Option键，此时会发现鼠标变成了问号的样子，在此状态下点击变量名，我们就会发现对变量的描述，具体效果请大家亲测。
+　　</li>
+</ul>
+<hr>
+<h2 id="数据转换"><a href="#数据转换" class="headerlink" title="数据转换"></a>数据转换</h2><pre><code>　　　`let num1 = 10;`
+　　　`let num2 = 5.8;`
+　　　// option键加左键点击num1会发现弹出框中显示num1为int型，num2为double型
+　　　`let intSum = num1 + Int(num2)`
+　　　`let doubleSum = Double(num1) + num2`
+　　　`print(intSum, doubleSum);`
+</code></pre><!-- page.path 表示不含根路径的页面网址。还有数种方式可以匹配页面，在此不赘述。 -->
+<p>&lt;% if (page.path === “tags/index.html”){ %&gt;<br>    &lt;引入 tags 页面的代码&gt;<br>&lt;% } %&gt;</p>
+
+    
     </div>
     
     <div class="article-info article-info-index">
@@ -345,6 +369,17 @@
 </ul>
 
       
+
+      
+        
+        <p>####首先先向各位读者道歉</p>
+<hr>
+<ul>
+<li>可能在大家浏览文章的过程中会发现页面底部没有评论栏的问题，因为是使用的多说评论平台，我对这方面也是缺乏经验</li>
+<li>目前最简单粗暴的解决办法是:关闭该网页在重新打开，多刷新几次也行。。。所以辛苦大家了</li>
+</ul>
+
+    
     </div>
     
     <div class="article-info article-info-index">
